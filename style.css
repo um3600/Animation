@@ -1,0 +1,22 @@
+
+.duration-delay {
+    --animate-duration: 3s;
+    --animate-delay: 1s;
+}
+
+@keyframes myCustomBounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-80px); } /* jump higher */
+}
+
+.custom-bounce {
+    animation: myCustomBounce 2s infinite;
+}
+@keyframes myCustomPulse {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.4); } 
+}
+
+.custom-pulse {
+    animation: myCustomPulse 1.5s infinite;
+}
